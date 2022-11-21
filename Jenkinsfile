@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'win10_631demo'
+      label 'whnNote'
     }
 
   }
@@ -16,6 +16,6 @@ pipeline {
 
   }
   environment {
-    python = 'C:\\SkyEye\\lib\\python35'
+    python = 'D:\\install\\SkyEye\\lib\\python35'
   }
 }
