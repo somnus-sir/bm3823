@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('static_test') {
       steps {
-        bat 'ipconfig'
         bat 'dir'
         bat 'python D:\\jenkins_workspace\\static_test.py'
       }
