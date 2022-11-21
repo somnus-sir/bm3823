@@ -10,11 +10,13 @@ pipeline {
       steps {
         bat 'ipconfig'
         bat 'dir'
+        bat 'cd D:\\jenkins_workspace'
+        bat 'python demo.py'
       }
     }
 
   }
   environment {
-    python = 'D:\\install\\SkyEye\\lib\\python35\\python.exe'
+    python = 'D:\\install\\SkyEye\\lib\\python35'
   }
 }
