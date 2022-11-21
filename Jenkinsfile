@@ -10,7 +10,8 @@ pipeline {
       steps {
         bat 'ipconfig'
         bat 'dir'
-        bat 'cd ../..'
+        bat 'cd ..'
+        bat 'cd ..'
         bat 'python demo.py'
       }
     }
