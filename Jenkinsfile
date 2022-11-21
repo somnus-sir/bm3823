@@ -10,9 +10,7 @@ pipeline {
       steps {
         bat 'ipconfig'
         bat 'dir'
-        bat 'cd ..'
-        bat 'cd ..'
-        bat 'python demo.py'
+        bat 'python D:\\jenkins_workspace\\demo.py'
       }
     }
 
