@@ -6,9 +6,10 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('test') {
       steps {
         powershell(script: 'cd D:\\jenkins_workspace', encoding: 'python skyeye_test.py')
+        powershell 'python demo.py'
       }
     }
 
