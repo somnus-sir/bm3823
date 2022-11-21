@@ -6,11 +6,17 @@ pipeline {
 
   }
   stages {
-    stage('test') {
+    stage('static_test') {
       steps {
         bat 'ipconfig'
         bat 'dir'
-        bat 'python D:\\jenkins_workspace\\demo.py'
+        bat 'python D:\\jenkins_workspace\\static_test.py'
+      }
+    }
+
+    stage('skyeye_test') {
+      steps {
+        bat 'python D:\\jenkins_workspace\\skyeye_test.py'
       }
     }
 
