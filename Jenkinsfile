@@ -18,6 +18,5 @@ pipeline {
   }
   environment {
     python = 'C:\\SkyEye\\lib\\python35'
-    git = 'C:\\Program Files\\Git\\bin'
   }
 }
